@@ -1,0 +1,107 @@
+
+########## BASICS ##########
+
+# In terminal 'file local.txt' is equal to = file\ local.txt
+# space = "\ " 
+
+mkdir : Creat Folder
+cd : Open Folder
+touch : Creat File
+nano : Open File
+
+rm :for remove file
+rmdir : for remove folder
+rm -r : remove everything in folder
+
+cp : copy file ex: cp file.txt folder/
+mv : move file.
+
+# Note : ls = dir
+# <dest> = destination, file/folder
+
+ls : show folder directory
+ls -m : saprate file/folder with "," .
+ls -a : show all folders and files hidden also
+ls -A or la : as a -a but not show . and ..
+ls -1 : list of file/folder with '\n'
+ls -l or ll : show file/folder permision and update time.
+ls -R : show all folder subdirectorys and files.
+ls -d : select directory
+
+user and group:
+ls -g : show group.
+ls -G : don't show group.
+ls -o : show owner.
+ls -n : nubric user and group. (like -l)
+
+ls -s : file/folder size in kb.
+ls -d -s : for selected file/folder.
+ls <dest> --size 
+
+ls -i : print/show index number of each file.
+
+short :
+ls -r : reverse shoting
+ls -t : short by time
+ 
+# Rename Directory and file
+Old Name = Folder, file.txt
+New Name = Folder2, file2.txt
+
+$ mv Folder Folder2
+$ mv file.txt file2.txt
+
+# linking directory
+sudo ln -s /opt/lampp/xampp /usr/local/bin
+= ln -s location destination
+
+
+########## Permission ##########
+
+# get permissions using
+$ ls -ld folder      {For Showing Folder Permissions}
+$ getfacl folder 
+$ ls -l file.txt        {For Showing File Permissions}
+
+# Output:
+This is Permission
+-rwxr-xr-x
+
+# Method:
+forget first -
+read permission as three words
+first three for owner (rwx)
+second three for group (r-x)
+third three for others (r-x)
+
+(r) Read = 4
+(w) write = 2
+(x) exicute = 1
+(-) none = 0
+
+for owner read, write, exicute = rwx = 4+2+1 = 7
+for group read only            = r-- = 4+0+0 = 4
+for other exicute only         = --x = 0+0+1 = 1
+
+# command 
+$ chmod 741 file.txt
+
+
+
+########## Owner Ship ##########
+
+user = username {kaushal}
+group = group {root}
+file/folder = dir or file {htdocs/}
+
+# change owner only
+$ sudo chown user file/folder
+       
+# change owner and group
+$ sudo chown user:group file/folder
+
+# change group only
+$ sudo chown :GROUP file/folder     
+
+# change sub folders/files owners also
+$ sudo chown -R user:group file/folder

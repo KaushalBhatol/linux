@@ -1,0 +1,38 @@
+
+# know about system
+$ uname -a
+$ lsb_release -a
+
+# Directory
+$ pwd { current directory}
+
+# Upadate and upgrade pakages
+$ sudo apt update &&  sudo apt full-upgrade   { in full-upgrade = upgrade. autoremove  }
+$ sudo snap refresh && sudo snap changes
+
+# Command help
+$ command -h
+$ command --help
+$ man command {Full Manual details}
+$ sudo snap list {Show all installed snap pkges}
+
+----------- clear, history clear terminal -----
+
+# Ubuntu
+$ cat /dev/null > ~/.bash_history   { Clear internal text only } 
+or
+$ rm ~/.bash_history                { Remove Total file }
+
+$ history -c  { Requierd in all terminal tab }
+
+# Kali (qterminal) 
+
+$ rm ~/zsh_history
+
+
+# power off pc
+
+$ shutdown
+$ reboot
+& halt
+& poweroff

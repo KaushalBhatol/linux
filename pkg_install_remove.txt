@@ -1,0 +1,24 @@
+01. apt
+* install
+# sudo apt install pkg_name
+* remove
+# sudo apt remove pkg_name
+
+02. snap
+* install
+# sudo snap install pkg_name
+* remove
+#sudo snap list
+#sudo snap pkg_name info
+# sudo snap remove pkg_name   {MAIN}
+#sudo snap pkg_name info
+
+01.    deb file
+# sudo dpkg -i file_name.deb
+
+02.   .tar.gz
+# tar xf filename.tar.gz       {Extract File} 
+# cd filename/                 {Go To Extracted File}
+read readme.txt                {If wrote execute the run.sh follow below steps.}
+# cd /bin
+#./run.sh

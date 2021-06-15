@@ -1,0 +1,25 @@
+////  extract, view, test zip  ////
+
+# zip -r zifile.zip ab.txt folder1  {Creat Zip File adding ab.txt and folder1}
+# zip zipfile.zip -u bc.txt         { add bc.txt in zipFile.zip }
+
+# unzip -t file.zip          {Teat Zip For Errors}
+# unzip -z file.zip          {Show Comments Only}
+# unzip -l file.zip          {View File List With Comments}
+# unzip file.zip             {extract in current folder 
+# unzip file.zip -d folder/  {extract in spacifi folder 
+# unzip file.zip –x file.txt {extrack spacify file in current folder}
+-----------------------------------------------------------------------------
+
+//// unzip test.zip –x a_particular_file.txt rar ////
+# sudo add-apt-repository multiverse
+# sudo apt install rar 
+  
+# rar a ArchiveName File_1 File_2 Dir_1 Dir_2  {creat add File and Dir to Archi>
+# rar u ArchiveName.rar file.txt         { update Archive / add file.txt in Arc>
+
+# rar l file.rar          {View File List With Comments}
+# rar t file.rar          {Test Archive For Errors}
+# rar x file.rar          { extract zip in current folder }
+# rar x file.rar Folder/  { extract in selected Folder }  
+----------------------------------------------------------------------------

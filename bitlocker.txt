@@ -1,0 +1,29 @@
+// tool for unlock
+# sudo apt-get install dislocker
+// creating dir for mount
+# sudo mkdir /media/bitlocker
+# sudo mkdir /media/mount
+// finding our usb
+# sudo fdisk -l
+// Unlocking your USB Drive
+# sudo dislocker -r -V /dev/sde1 -uYourPassword -- /media/bitlocker
+//Mounting  Drive
+# sudo mount -r -o loop /media/bitlocker/dislocker-file /media/mount
+---------------------------------
+
+///     Creating a Script to automatically Mount the locked Drive   ///
+#  sudo gedit /usr/local/bin/unlock.sh
+// write below three lines in unlock.sh file 
+#!/bin/bash
+sudo dislocker -r -V /dev/sde1 -u -- /media/bitlocker
+sudo mount -r -o loop /media/bitlocker/dislocker-file /media/mount
+// save file
+// Adjust the permission to make the File executable:
+# sudo chmod +x /usr/local/bin/unlock.sh
+// So the next time you restart and need to access your USB Drive again, simply open a Terminal and type:
+# sudo unlock.sh
+--------------------------------------------------
+
+///// Unmount Mounted files
+# umount /media/mount
+# umount /media/bitlocker

@@ -1,0 +1,37 @@
+
+# Desktop
+$ sudo apt install kali-desktop-gnome
+
+# backup {locally}
+$ sudo apt-get install unison
+
+# Office
+$ sudo snap install libreoffice 
+
+# Torrent  
+$ sudo apt install qbittorrent   {famous and more worck}
+$ sudo apt install transmission  {Defult Ubuntu}
+
+# Terminal
+$ sudo apt install terminator
+
+# Browser
+$ sudo apt install firefox-esr   {For yearly realis}
+$ sudo apt install chromium      {Light waight browser}
+
+# Taskmanager & pkg manager
+$ sudo apt install stacer        {also able to remove pakages and clean system.}
+
+# music & video
+$ sudo apt install vlc
+
+# vscode
+$ sudo snap install code --classic
+# vmbox
+$ sudo adduser $USER vboxusers
+
+## for welcome terminal msg
+
+```bash
+sudo apt-get install fortune cowsay
+```

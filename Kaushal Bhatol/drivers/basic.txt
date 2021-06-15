@@ -1,0 +1,5 @@
+# list usb
+lsusb
+# list hardware
+lshw
+

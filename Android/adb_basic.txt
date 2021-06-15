@@ -1,0 +1,12 @@
+
+<lolcal> = pc     = ~/Desktop/
+<remote> = mobile = sdcard/mobile.txt
+// adb shell for listing mobile directorys
+// adb push and pull not worck in adb shell
+
+# adb devices { listed all connected devices }
+# adb shell - launches a shell on the device
+# adb push <local> <remote> - pushes the file <local> to <remote>
+# adb pull <remote> [<local>] - pulls the file <remote> to <local>. If <local> isn’t specified, it will pull to the current folder.
+# adb logcat - allows you to view the device log in real-time. You can use adb logcat -b radio to view radio logs, and adb logcat -C to view logs in colour
+# adb install <file> - installs the given .apk file to your device

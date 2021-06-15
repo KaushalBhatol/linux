@@ -1,0 +1,54 @@
+// Server Connect
+ftp 192.168.42.77
+
+// server discoonect
+ftp>  quit
+
+//  Common FTP Commands
+ help or ? - list all available FTP commands.
+  cd - change directory on the remote machine.
+  lcd - change directory on the local machine.
+  ls - list the names of the files and directories in the current remote directory.
+  mkdir - create a new directory within the current remote directory.
+ pwd - print the current working directory on the remote machine.
+ delete - remove a file in the current remote directory.
+ rmdir- remove a directory in the current remote directory.
+ get - copy one file from the remote to the local machine.
+ mget - copy multiple files from the remote to the local machine.
+ put - copy one file from the local to the remote machine.
+ mput - copy one file from the local to the remote machine
+ 
+ // Download
+ //Let’s say we want to download the files to the ~/ftp_downloads directory:
+ ftp>  lcd ~/ftp_downloads
+ ftp> get backup.zip 	// single file download
+ ftp> mget backup1.zip backup2.zip       //multiple file download
+ ftp> quit
+  
+ // Upload
+ ftp> put image.jpg         // single file upload
+ ftp> mput image1.jpg image2.jpg 		// multiple file upload
+ ftp> quit
+ 
+ 
+ // other
+ !		dir		mdelete		qc		site
+$		disconnect	mdir		sendport	size
+account		exit		mget		put		status
+append		form		mkdir		pwd		struct
+ascii		get		mls		quit		system
+bell		glob		mode		quote		sunique
+binary		hash		modtime		recv		tenex
+bye		help		mput		reget		tick
+case		idle		newer		rstatus		trace
+cd		image		nmap		rhelp		type
+cdup		ipany		nlist		rename		user
+chmod		ipv4		ntrans		reset		umask
+close		ipv6		open		restart		verbose
+cr		lcd		prompt		rmdir		?
+delete		ls		passive		runique
+debug		macdef		proxy		send
+
+ 
+ 
+ 

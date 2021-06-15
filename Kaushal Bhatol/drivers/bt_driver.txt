@@ -1,0 +1,16 @@
+$ lsusb | grep Bluetooth
+Bus 001 Device 004: ID 105b:e065 Foxconn International, Inc. BCM43142A0 Bluetooth module
+
+$ dmesg | egrep -i 'blue|firm'
+
+######### downloads and installations ######3
+
+# method: https://askubuntu.com/a/1340822/1167010
+
+# firmware
+ https://github.com/winterheart/broadcom-bt-firmware/
+- download brcm/BCM43142A0-105b-e065.hcd 
+
+> copy this file to /lib/firmware/brcm folder
+> restart needed
+

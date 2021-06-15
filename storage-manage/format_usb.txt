@@ -1,0 +1,18 @@
+
+# list usb
+sudo fdisk -l
+	or
+sudo lsusb
+
+# unmount
+sudo umount /dev/sdb1
+
+# Format Fat FileSystem
+sudo mkfs.vfat /dev/sdb1
+
+# Format NTFS FileSystem
+sudo mkfs.ntfs /dev/sdb1
+
+# Format EXT4 FileSystem
+sudo mkfs.ext4 /dev/sdb1
+
