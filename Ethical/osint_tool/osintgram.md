@@ -15,7 +15,8 @@
 ## configration
 
 * open `config/credentials.ini` or run `make setup`
-*  write instagram account username and password
+* Enter any instagram account username and password
+* Ensure that account is not your personal account, Because accont shoud be banned if instagram detacted activity.
 
 ## Use
 

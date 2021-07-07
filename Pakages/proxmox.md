@@ -1,9 +1,13 @@
 # PROXMOX
 
+Proxmox is type one hypervisor OperatingSystem.
+
+__⚠ Cution__: Installing proxmox will __remove all your hard disk *data*__.
+
 ## Index
 
 * installation
-  * [guide](#guide)
+  * [Guide](#guide)
   * [Removing local_lvm storage](#removing-local-lvm-storage)
   * [Auto-turnoff display](#auto-turnoff-display)
   * [login via ssh key](#login-via-ssh-key)
@@ -29,7 +33,7 @@
 * or use command
 
 ```bash
-firefox https://192.168.1.24/
+firefox https://192.168.1.24:8006/
 ```
 
 ### Removing local lvm storage
@@ -99,9 +103,10 @@ ssh-keygen -f ~/proxmox -t ecdsa -b 521
 
 Copying the Public Key to the Server:
 
-  ssh-copy-id -i ~/.ssh/proxmox.pub root@192.168.1.24 # enter server password
-  ssh root@192.168.1.24
-  rm -r ~/.ssh/id_*
+    ssh-copy-id -i ~/.ssh/proxmox.pub root@192.168.1.24
+    # enter server password
+    ssh root@192.168.1.24
+    rm -r ~/.ssh/id_*
 
 Once the public key has been configured on the server, the server will allow any connecting user that has the private key to log in. During the login process, the client proves possession of the private key by digitally signing the key exchange.
 
@@ -110,7 +115,7 @@ Once the public key has been configured on the server, the server will allow any
 for using proxmox terminal by ssh you just need run to below command.
 
 ```bash
-ssh root@192.168.1.1
+ssh root@192.168.1.24
 ```
 
 ## VNC Client Access - Remote Display
