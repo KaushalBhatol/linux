@@ -10,7 +10,7 @@
 	sudo pip install geopy gnureadline==6.3.3
 	git clone https://github.com/Datalux/Osintgram.git
 	cd Osintgram
-	sudo pip install -r ./requierments.txt
+	sudo pip install -r requierments.txt
 
 ## configration
 
