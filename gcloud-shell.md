@@ -36,3 +36,11 @@ This allows you to edit the files in your Cloud Shell home directory using your 
 
 	gcloud cloud-shell get-mount-command ~/my-cloud-shell
 
+## Important things after getting on it.
+
+1. change password of shell user
+
+	sudo chpasswd $USER
+2. update and upgrade repositorys
+
+	sudo apt-get update && sudo apt upgrade -y 
