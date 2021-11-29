@@ -195,8 +195,8 @@ apt update
 ## Proxmox Paths and Locations of files
 
 ```bash
-/var/lib/vz/dump # ISO Files
-/var/lib/vz/template/iso # Images
-/var/lib/vz/images # Templates
-/var/lib/vz/template/cache # Cache
+/var/lib/vz/dump # Backups
+/var/lib/vz/template/iso # Iso files
+/var/lib/vz/images # Images
+/var/lib/vz/template/cache # Templates
 ```
